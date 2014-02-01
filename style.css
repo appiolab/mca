@@ -35,8 +35,9 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
-	font-size: 100%;
+	font-family: Arial,sans-serif;;
+	font-size: 12px;
+        line-height: 1.1em;
 	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
@@ -58,7 +59,7 @@ html {
 	box-sizing:         border-box;
 }
 body {
-	background: #fff;
+	background: #cccccc;
 }
 article,
 aside,
@@ -476,7 +477,7 @@ a:active {
 .sticky {
 }
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 .byline,
 .updated {
@@ -495,8 +496,22 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+.entry-header .entry-title{
+    color: #505C12;
+    font-style: italic;
+    font-size: 34px;
+    font-family: "SEDefault Font";
+}
+.entry-header,.entry-content{
+    padding: 0 30px;
+}
+.entry-content{min-height: 220px;}
+.entry-content a{text-decoration: none;color: #073C34;}
+.entry-content a:hover{text-decoration: none;color: #505C12;}
+.entry-content p{line-height: 1.35em;font-size: 13px;color: black;}
 
-
+.entry-content p[class^="style"]{ font-size: 16px;color: #505C12;font-weight: bold;margin-bottom: 5px;}
+.entry-content p span[class^="style"]{ font-size: 15px;color: black;}
 /* =Asides
 ----------------------------------------------- */
 
@@ -617,4 +632,32 @@ object {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+#page{width: 800px;margin: 0 auto;background-color: #073c34;}
+#primary{float: right;width: 537px;background-color: white;}
+#secondary{float: left;width: 263px;background-color: #073c34;}
+#site-navigation{padding: 30px 35px; background-color: #505c12;height: 284px;}
+#site-navigation ul.nav-menu{margin: 0px;padding: 0px;}
+#site-navigation ul li{width: 200px;float: none;}
+
+#site-navigation ul li a{padding: 8px 0;text-transform: uppercase; background-image: url('assets/images/arrow.png');
+background-repeat: no-repeat;font-size: 12.5px;background-position: 0 8px;padding-left: 23px;color: #faffe3;}
+#site-navigation a{color: white;text-decoration: none;}
+#site-navigation a:hover{color: #2b3209;}
+#site-service{padding: 20px 35px;background-color: #dcd58e;}
+#site-service ul{margin: 0px;padding: 0px;}
+#site-service ul li{width: 215px;float: none;}
+#site-service ul li a{color: #073C34; text-decoration: none;padding: 2px 0;}
+#site-service ul li a:before{content: ">> ";font-size: 12px;font-family: "Times New Roman", Times, serif;margin-right: 0px;color: white;}
+#site-service ul li a:hover{color: #505C12;}
+#site-service .service-title{text-transform: uppercase;color: #505C12;font-size: 20px;font-family: "SEDefault Font";
+margin-bottom: 10px;}
+.site-header{border-top: 18px solid #073c34;margin-top: 10px;}
+.site-footer{background-color: #dcdddf;padding: 20px 30px;margin-bottom: 20px;}
+.site-footer a{text-decoration: none;color: #073C34;}
+.site-footer a:hover{color: #505C12;}
+.site-footer .site-info .left{float: left;}
+.site-footer .site-info .right{float: right;}
+.multiple{height: 150px;
 }

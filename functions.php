@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 804; /* pixels */
 }
 
 if ( ! function_exists( 'mca_setup' ) ) :
@@ -38,11 +38,12 @@ function mca_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'mca' ),
+                'service' => __( 'Service', 'mca' ),
 	) );
 
 	// Enable support for Post Formats.

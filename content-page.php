@@ -7,6 +7,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <?php 
+        if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+          the_post_thumbnail();
+        } 
+        ?>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
@@ -20,5 +25,5 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'mca' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php //edit_post_link( __( 'Edit', 'mca' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
